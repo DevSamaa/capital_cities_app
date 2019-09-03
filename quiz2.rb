@@ -15,7 +15,7 @@ def play_quiz
         puts quiz_item[:question]
         shuffled_cities = quiz_item[:answers].shuffle
         shuffled_cities.each_with_index do |option, index|
-            puts "#{index +1}) #{option}"
+            puts "#{index +1}. #{option}"
         end 
         print "> "
         user_answer = gets.chomp.to_i
