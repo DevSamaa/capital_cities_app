@@ -32,9 +32,13 @@ puts "2. Start quiz"
 puts "3. Exit"
 
 user_menu_selection = gets.to_i
-if user_menu_selection == 2
-   play_quiz
+loop do
+    if user_menu_selection == 2
+    play_quiz
+    elsif user_menu_selection == 3
+        puts "Good Bye Lenin"
+        break
+    end
 end
-
 
 
