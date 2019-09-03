@@ -161,38 +161,3 @@ QUIZ_QUESTIONS = [
         correct: "Edinburgh"
     },
 ]
-
-
-# counter = 0
-# quiz_questions.shuffle!
-# loop do 
-#     quiz_item = quiz_questions[counter]
-#     puts quiz_item[:question]
-#     quiz_item[:answers].shuffle.each_with_index do |option, index|
-#         puts "#{index + 1}) #{option}"
-#     end 
-#     print "> "
-#     user_answer = gets.chomp.to_i
-#     counter += 1
-# end 
-
-
-# counter = 0
-# while counter < 10
-#     quiz_questions.shuffle.each_with_index do |item, index|
-#         puts item[:question]
-#         puts "#{index + 1}" + " #{item[:answers]}"
-#         print "> "
-#         user_answer = gets.chomp.to_i
-#         counter = counter +1
-#     end
-# end
-
-
-# if user_answer == quiz_questions[[counter]:correct]
-#     puts "That's correct"
-# else
-#     puts "That's incorrect. You lose"
-# end
-
-
