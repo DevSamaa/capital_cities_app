@@ -2,6 +2,9 @@ require_relative 'questions'
 require_relative 'menu'
 require_relative 'enter_high_score'
 
+# Gems
+require 'colorize'
+
 def play_quiz
     counter = 0
     QUIZ_QUESTIONS.shuffle!
@@ -20,7 +23,7 @@ def play_quiz
         print "> "
         user_answer = gets.chomp.to_i
         if shuffled_cities[user_answer - 1] == QUIZ_QUESTIONS[counter][:correct]
-            puts "That's correct"
+            puts "That's correct".colorize(:green)
             p "Your current score is " +"#{counter +1}"
             puts " "
         else
@@ -32,3 +35,9 @@ def play_quiz
 end
 
 menu_method
+
+
+# attempting error handling here
+        # elsif shuffled_cities[user_answer - 1] != 1 || 2 || 3 || 4
+        #     puts "Something went wrong. Please select one of the valid answer options"
+            # break        

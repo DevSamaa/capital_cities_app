@@ -1,7 +1,7 @@
 def menu_method
     loop do
         puts " "
-        puts "Welcome to the capital cities quiz."
+        puts "Welcome to quiz world."
         puts " "
         puts "What would you like to do?"
         puts "1. View High Score"
@@ -18,6 +18,9 @@ def menu_method
         elsif user_menu_selection == 3
             puts "Farewell dear friend, you have now left the quiz."
             break
+        else
+            puts "That is not a valid slection, please select one of the menu options"
+            # Ask if this is what is meant by error handling?
         end
     end
 end

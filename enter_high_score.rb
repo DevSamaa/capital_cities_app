@@ -1,3 +1,4 @@
+require 'colorize'
 
 def enter_high_score__win_method(counter)
     puts " "
@@ -14,7 +15,7 @@ end
 
 def enter_high_score__lose_method(counter)
     puts " "
-    puts "That's incorrect. You lose."
+    puts "That's incorrect. You lose.".colorize(:red)
     puts " "
     puts "Please enter your name so we can add you to the high score list"
     puts "> "
