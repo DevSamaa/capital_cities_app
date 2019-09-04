@@ -20,7 +20,7 @@ def menu_method
             break
         else
             puts "That is not a valid slection, please select one of the menu options"
-            # Ask if this is what is meant by error handling?
+            # Error Handling
         end
     end
 end
