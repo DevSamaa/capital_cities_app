@@ -2,18 +2,15 @@
 
 require_relative 'questions'
 require_relative 'menu'
+require_relative 'enter_high_score'
 
 def play_quiz
     counter = 0
     QUIZ_QUESTIONS.shuffle!
     loop do 
-        if counter == 3
+        if counter == 1
             puts "Congratulations, you just won the game"
-            puts " "
-            # add line manually to high score, change this later to do it automatically
-            File.open("high_score.csv", "w") do |line|
-                line << "Samaa, Three poings\n"
-              end
+            enter_high_score_method(counter)
             break
         end 
         quiz_item = QUIZ_QUESTIONS[counter]
@@ -31,11 +28,11 @@ def play_quiz
             puts " "
         else
             puts "That's incorrect. You lose."
-            puts " "
+            enter_high_score_method(counter)
             break
         end
         counter = counter + 1
     end 
 end
 
-menu
+menu_method

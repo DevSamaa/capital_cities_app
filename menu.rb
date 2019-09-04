@@ -1,4 +1,4 @@
-def menu
+def menu_method
     loop do
         puts " "
         puts "Welcome to the capital cities quiz."
