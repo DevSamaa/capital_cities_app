@@ -1,5 +1,3 @@
-# The quiz works, now I'll try to find a way to save the high score to a CSV
-
 require_relative 'questions'
 require_relative 'menu'
 require_relative 'enter_high_score'
@@ -9,8 +7,7 @@ def play_quiz
     QUIZ_QUESTIONS.shuffle!
     loop do 
         if counter == 1
-            puts "Congratulations, you just won the game"
-            enter_high_score_method(counter)
+            enter_high_score__win_method(counter)
             break
         end 
         quiz_item = QUIZ_QUESTIONS[counter]
@@ -27,8 +24,7 @@ def play_quiz
             p "Your current score is " +"#{counter +1}"
             puts " "
         else
-            puts "That's incorrect. You lose."
-            enter_high_score_method(counter)
+            enter_high_score__lose_method(counter)
             break
         end
         counter = counter + 1
