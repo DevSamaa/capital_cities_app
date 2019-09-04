@@ -10,7 +10,7 @@ def play_quiz
     QUIZ_QUESTIONS.shuffle!
     loop do 
         if counter == 3
-            enter_high_score__win_method(counter)
+            enter_high_score_win_method(counter)
             break
         end 
         quiz_item = QUIZ_QUESTIONS[counter]
@@ -29,7 +29,7 @@ def play_quiz
             puts " "
             counter = counter + 1
         else
-            enter_high_score__lose_method(counter)
+            enter_high_score_lose_method(counter)
             break
         end
     end

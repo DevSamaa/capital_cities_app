@@ -1,4 +1,13 @@
+require 'artii'
+require 'rainbow'
+require 'tty-font'
+require 'colorize'
+
+ARTII = Artii::Base.new :font => 'speed'
+FONT = TTY::Font.new(:standard)
+
 def menu_method
+    puts ARTII.asciify("Quiz World")
     loop do
         puts " "
         puts "Welcome to quiz world."
@@ -16,11 +25,13 @@ def menu_method
         elsif user_menu_selection == 2
             play_quiz
         elsif user_menu_selection == 3
+            puts ARTII.asciify("BYE BYE")
             puts "Farewell dear friend, you have now left the quiz."
             break
         else
-            puts "That is not a valid slection, please select one of the menu options"
             # Error Handling
+            puts "********************************************************************"
+            puts "That is not a valid slection, please select one of the menu options".blink
         end
     end
 end

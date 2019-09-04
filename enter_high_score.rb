@@ -1,6 +1,6 @@
 require 'colorize'
 
-def enter_high_score__win_method(counter)
+def enter_high_score_win_method(counter)
     puts " "
     puts "Congratulations, you just won the game"
     puts " "
@@ -8,12 +8,12 @@ def enter_high_score__win_method(counter)
     puts "> "
     user_name = gets.chomp
     File.open("high_score.csv", "a") do |line|
-    line << "#{user_name}, #{counter}\n"
+    line << "\n\nUsername: #{user_name} || Highscore: #{counter}\n"
     end
 end
 
 
-def enter_high_score__lose_method(counter)
+def enter_high_score_lose_method(counter)
     puts " "
     puts "That's incorrect. You lose.".colorize(:red)
     puts " "
@@ -21,6 +21,6 @@ def enter_high_score__lose_method(counter)
     puts "> "
     user_name = gets.chomp
     File.open("high_score.csv", "a") do |line|
-    line << "#{user_name}, #{counter}\n"
+    line << "\n\nUsername: #{user_name} || Highscore: #{counter}\n"
     end
 end
