@@ -1,8 +1,9 @@
 require 'colorize'
+require 'rainbow'
 
 def enter_high_score_win_method(counter)
     puts " "
-    puts "Congratulations, you just won the game"
+    puts "Congratulations, you just won the game".blink.colorize(:pink)
     puts " "
     puts "Please enter your name so we can add you to the high score list"
     puts "> "
