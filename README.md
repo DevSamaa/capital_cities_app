@@ -29,10 +29,20 @@ The user will start the app and then have three options. They’ll either be abl
 
 
 ## 3. List of Features
-* Play Quiz
-* View High Score
-* Add to High Score
-* Error Handling 
+* Play Quiz<br>
+This is the main part of the application. Once the user chooses ‘start quiz’ from the menu, they’ll get to this part of the application. The code is spread over several files. The questions.rb file contains an array of hashes with the questions, multiple choice answer options, and the correct answer. The quiz.rb file is where the three main methods of the quiz are located. The play_quiz method starts with a counter of 0 and loops through until the counter gets to 10. When the game starts the questions in the array of hashes are shuffled to ensure that the user doesn’t always get the same order of questions. The code then goes to the ask_question method and show_answer method to display the question and answer that corresponds to the index of the counter.
+The play quiz part of the app also contains error handling. If the user chooses an option other than 1, 2, 3, or 4, it tells them that this is not a valid option and they’ll get to repeat the question.
+
+* Add to High Score<br>
+Once the user gets to 10 points, they win and the game ends. The enter_high_score_win_method which is stored in a different file is then called. It takes the argument of (counter) to add the points to the high score list.
+It also gets input from the user, by asking them to type in their name. It then combines the name and the score and appends that to the CSV file.
+
+* View High Score<br>
+The menu contains an if statement which lets the user select the ‘view high score’ option. If the user selects that option, the code loops through and puts every line from the high_score.csv file. The user will then be able to view all of the high scores that were recorded.
+
+* Menu<br>
+There is a menu which lets the user pick 1, 2, or 3 based on what they want to do. If they chose anything else, the else part of the if loop tells them that this is not a valid option. The loop then continues and prints the menu again. After viewing the high score or playing a game, the menu is printed again so that the user can choose what they want to do next.
+
 
 ## 4. User Interaction and Experience
 
