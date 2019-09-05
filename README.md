@@ -24,3 +24,6 @@ Anyone who is interested in learning something new in a gamified way is part of 
 
 How:<br>
 The user will start the app and then have three options. They’ll either be able to start a quiz, view the high score or exit out of the app. Once they start the quiz, they’ll have to answer 10 consecutive answers correctly in order to win.  If they answer a question incorrectly, they’ll lose the game. The user can play the quiz as many times as they like. Every time a quiz is started the questions and answers will be shuffled, so the user is not going to see the same questions in the same order every time. Regardless of whether the user wins or loses, they’ll be able to enter their score into a high score sheet in the form of a CSV file. They will also be able to view that high score list.
+
+
+## 3. List of Features
