@@ -4,6 +4,7 @@ require_relative 'enter_high_score'
 
 # Gems
 require 'colorize'
+require 'pry'
 
 def ask_question_method(counter)
     quiz_item = QUIZ_QUESTIONS[counter]
@@ -19,14 +20,27 @@ def show_answer_options(quiz_item)
     end 
     print "> "
     user_answer = gets.chomp.to_i
-    return user_answer, shuffled_cities
+    begin 
+        valid_answers = [1, 2, 3, 4]
+        is_valid_answer = valid_answers.include?(user_answer)
+        if is_valid_answer == false 
+            raise
+        else 
+            return user_answer, shuffled_cities
+        end 
+    rescue 
+        puts " "
+        puts "The selection you choose is not valid! Please input 1, 2, 3 or 4"
+        puts " "
+        show_answer_options(quiz_item)
+    end 
 end
 
 def play_quiz
     counter = 0
     QUIZ_QUESTIONS.shuffle!
     loop do 
-        if counter == 3
+        if counter == 5
             enter_high_score_win_method(counter)
             break
         end 
