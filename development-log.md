@@ -23,5 +23,5 @@ September 5th, 5pm:
 
 Here are the screenshots from the rubocop gem:
 
-![before running the gem](rubocop_gem/rubocop1.png)
-![after running the gem](rubocop_gem/rubocop2.png)
+![before running the gem](rubocop_gem/samaa-kanani-T1A2-7-gems-rubocop1.png)
+![after running the gem](rubocop_gem/samaa-kanani-T1A2-7-gems-rubocop2.png)

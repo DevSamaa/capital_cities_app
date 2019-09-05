@@ -30,7 +30,7 @@ def show_answer_options(quiz_item)
         end 
     rescue 
         puts " "
-        puts "The selection you choose is not valid! Please input 1, 2, 3 or 4"
+        puts "This input is not valid! Please select 1, 2, 3 or 4."
         puts " "
         show_answer_options(quiz_item)
     end 
@@ -40,7 +40,7 @@ def play_quiz
     counter = 0
     QUIZ_QUESTIONS.shuffle!
     loop do 
-        if counter == 10
+        if counter == 1
             enter_high_score_win_method(counter)
             break
         end 

@@ -7,6 +7,7 @@ ARTII2 = Artii::Base.new :font => 'starwars'
 def enter_high_score_win_method(counter)
     puts " "
     puts ARTII2.asciify("You Win").blink
+    `say "you are the champion"`
     puts "Congratulations, you just won the game".colorize(:blue)
     puts " "
     puts "Please enter your name so we can add you to the high score list"
