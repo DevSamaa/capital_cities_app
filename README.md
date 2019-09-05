@@ -8,6 +8,8 @@ This document contains the following information:
 5. Control Flow Diagram	
 6. Implementation Plan
 
+## 1 Help File
+add this at the end
 
 ## 2. Statement of Purpose
 
@@ -27,3 +29,13 @@ The user will start the app and then have three options. They’ll either be abl
 
 
 ## 3. List of Features
+* Play Quiz
+* View High Score
+* Add to High Score
+* Error Handling 
+
+## 4. User Interaction and Experience
+
+## 5. Control Flow Diagram	
+
+## 6. Implementation Plan

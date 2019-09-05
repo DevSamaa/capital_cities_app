@@ -12,3 +12,4 @@ gem install colorize
 gem install artii
 gem install rainbow
 gem install tty-font
+gem install rubocop

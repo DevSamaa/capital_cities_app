@@ -15,3 +15,13 @@ September 5th, 10 am:
 * I have also added some gems to make the quiz look a bit more fun. The artii gem was used to create a big header to welcome the user. If the user gets a question right the message that is displayed is green and if they get a question wrong the message is displayed in red.
 * I have to do the rest of the documentation today and check to see whether I have included everything that was necessary.
 * Finally I'll have to figure out how to write tests for my terminal app.
+
+
+# Status Update 3
+September 5th, 5pm:
+* In order to clean up the questions.rb file I ran the rubocop gem on it. This means that I have now used 4 gems (plus one tty-font, which needs to be there for the rainbow getm to work properly).
+
+Here are the screenshots from the rubocop gem:
+
+![before running the gem](rubocop_gem/rubocop1.png)
+![after running the gem](rubocop_gem/rubocop2.png)
