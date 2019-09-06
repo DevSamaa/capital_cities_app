@@ -1,4 +1,4 @@
-# Software Development Plan
+# Software Development Plan for Quiz World
 
 This application was built by: Samaa Kanani<br>
 GitHub: [Click here to view the repository](https://github.com/DevSamaa/capital_cities_app) 
@@ -151,7 +151,7 @@ The other part that works with error handling is the actual quiz. When the quest
 
 
 ## 5. Control Flow Diagram	
-![Image 1 - Control Flow Diagram of the App](samaa-kanani-T1A2-5-flow-chart.png)
+![Image 1 - Control Flow Diagram of the App](flowchart/samaa-kanani-T1A2-5-flow-chart.png)
 <br>
 <br>
 <br>
