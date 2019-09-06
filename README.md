@@ -23,12 +23,28 @@ This document contains the following information:
 
 ### 1.1 Installation Process, System/Hardware requirements and Dependencies
 These instructions are for Mac, and other unix based systems. If you are using a Windows computer, please consult your administrator.
-* install Homebrew
-* install Ruby 2.5.1 
-* Turn on your speakers
-* Open your terminal
 
+1. Requirements
+* open your terminal
+* ensure that Ruby 2.5.1 is installed
+* to check your Ruby version type "ruby -v" into your terminal
+* if you don't have ruby installed, you can do that through homebrew and rbenv
+* turn on your speakers
+<br>
+<br>
 
+2. Clone the repository
+````
+git clone git@github.com:DevSamaa/capital_cities_app.git
+````
+<br>
+
+3. Go to the correct directory
+* from the terminal, cd into the directoy that you've cloned the repository to
+<br>
+<br>
+
+4. Install all dependencies (gems)
 Type this command into your terminal in order to install all the gems that are necessary in order to run this app.
 ````ruby
 bash build.sh
@@ -39,6 +55,16 @@ The necessary gems are:
 * rainbow
 * tty-font
 * rubocop
+<br>
+<br>
+
+5. Run the app
+type the following line into your terminal to run the app:
+````
+ruby quiz.rb
+````
+<br>
+<br>
 
 ### 1.2 Explanation of the different features of the application
 
