@@ -40,7 +40,7 @@ def play_quiz
     counter = 0
     QUIZ_QUESTIONS.shuffle!
     loop do 
-        if counter == 1
+        if counter == 10
             enter_high_score_win_method(counter)
             break
         end 
