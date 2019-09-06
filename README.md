@@ -23,8 +23,8 @@ This document contains the following information:
 
 ### 1.1 Installation Process, System/Hardware requirements and Dependencies
 These instructions are for Mac, and other unix based systems. If you are using a Windows computer, please consult your administrator.
-* Homebrew has to be installed
-* Ruby 2.5.1 
+* install Homebrew
+* install Ruby 2.5.1 
 * Turn on your speakers
 * Open your terminal
 
@@ -125,7 +125,7 @@ The other part that works with error handling is the actual quiz. When the quest
 
 
 ## 5. Control Flow Diagram	
-
+![Image 1 - Control Flow Diagram of the App](samaa-kanani-T1A2-5-flow-chart.png)
 <br>
 <br>
 <br>
